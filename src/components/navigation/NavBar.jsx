@@ -52,7 +52,7 @@ function Navbar(){
 
     window.onscroll = function() {scrollFunction()}
 
-    function scrollFunction() {
+    const scrollFunction = () => {
         if(document.getElementById('navbar')){
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 document.getElementById('navbar').classList.add('shadow-navbar');

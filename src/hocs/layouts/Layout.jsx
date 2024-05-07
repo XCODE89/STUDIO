@@ -8,7 +8,7 @@ const Layout = ({children}) => {
     )
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
 
 })
 

@@ -10,12 +10,15 @@ import About from './containers/pages/About'
 import Blog from './containers/pages/Blog'
 import Careers from './containers/pages/Careers'
 import Contact from './containers/pages/Contact'
+import NavBar from './components/navigation/NavBar'
+import Footer from './components/navigation/Footer'
 
 function App() {
 
   return (
     <Provider store={store}>
       <Router>
+        <NavBar/>
         <Routes>
           <Route path='*' element={<Error404/>}/>
           <Route path='/' element={<Home/>}/>
@@ -26,6 +29,7 @@ function App() {
           <Route path='/carreras' element={<Careers/>}/>
           <Route path='/contacto' element={<Contact/>}/>
         </Routes>
+        <Footer/>
       </Router>
     </Provider>
   )
