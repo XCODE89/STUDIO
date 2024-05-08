@@ -86,7 +86,7 @@ const CasesList = () => {
               itemPadding={[0, 48]}
             >
               {posts.map((post, index) => (
-                <CaseCard index={index} data={post}/>
+                <CaseCard key={index} index={index} data={post}/>
               ))}
             </Carousel>
           </div>
