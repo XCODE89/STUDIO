@@ -124,7 +124,7 @@ function Header(){
               ))}
               </div>
             </div>
-            <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden bg-white blur-lg lg:top-[calc(100%-45rem)] sm:top-[calc(100%-30rem)]">
+            <div className="absolute inset-x-0 top-[calc(100%-25rem)] -z-10 transform-gpu overflow-hidden bg-white blur-lg lg:top-[calc(100%-35rem)] sm:top-[calc(100%-25rem)]">
               <img src="https://bafybeicgamofiuvkc6wjxl4wwzzh6pdovhcvvyc2gw5verruiolnykzz3i.ipfs.w3s.link/bbub3.jpg" className='w-full h-full object-cover'/>
             </div>
           </div>
