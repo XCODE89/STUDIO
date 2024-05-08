@@ -1,6 +1,6 @@
 
 import Layout from '../../hocs/layouts/Layout'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../../components/navigation/Footer'
 import Header from '../../components/home/Header'
 import Incentives from '../../components/home/Incentives'
@@ -10,6 +10,10 @@ import CTA from '../../components/home/CTA'
 import Clients from '../../components/home/Clients'
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[])
+
   return (
     <Layout>
       <Header/>
