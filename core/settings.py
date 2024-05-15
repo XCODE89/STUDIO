@@ -45,7 +45,8 @@ DJANGO_APPS = [
 ]
 
 PROJECTS_APPS = [
-    
+    "apps.blog",
+    "apps.category",
 ]
 
 THIRD_PARTY_APPS = [
@@ -139,7 +140,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es'
 
-TIME_ZONE = 'UTC-4'
+TIME_ZONE = 'America/Lima'
 
 USE_I18N = True
 
