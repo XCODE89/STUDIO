@@ -2,7 +2,7 @@ import {connect} from 'react-redux'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import {useState, Fragment, useEffect } from 'react'
-import {NavLink,Link} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 import loading_dots from '../../assets/images/logo.png'
 import logo_boomslag from '../../assets/images/logo.png'
 import DotLoader from 'react-spinners/DotLoader'
@@ -95,7 +95,7 @@ function Navbar(){
                     </Link>
                     </div>
                 </div>
-                <div className="-ml-4 -mt-2 lg:hidden flex flex-wrap items-center justify-between sm:flex-nowrap md:px-14 px-2">
+                <div className="-ml-4 -mt-2 lg:hidden flex flex-nowrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
                     <Link to='/' className="ml-4 mt-2">
                     <img
                         src={'https://bafybeiczl4dcxupma2zeyilkukfl4yge64axnhajd722wxgin62mtts6uy.ipfs.w3s.link/murkivamarketing.png'}
@@ -132,9 +132,9 @@ function Navbar(){
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 translate-y-1"
                             >
-                            <Popover.Panel className="absolute -left-32 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
+                            <Popover.Panel className="absolute -right-8 sm:-right-4 z-10 mt-3 w-screen max-w-xs transform px-4 sm:px-0 lg:max-w-3xl">
                                 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                                <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
+                                <div className="relative grid gap-8 bg-gray-50 p-7 lg:grid-cols-2">
                                     {solutions.map((item) => (
                                     <Link
                                         key={item.name}
