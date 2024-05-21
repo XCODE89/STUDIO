@@ -8,5 +8,6 @@ class CategorySerializer(serializers.ModelSerializer):
             "id",
             "name",
             "slug",
-            "view_url",
+            "views",
+            # "view_url",
         ]
