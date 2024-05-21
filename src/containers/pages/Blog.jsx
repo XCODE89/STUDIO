@@ -1,10 +1,13 @@
 import { Helmet } from 'react-helmet-async'
 import Layout from '../../hocs/layouts/Layout'
 import React, { useEffect } from 'react'
+import { get_categories } from '../../redux/actions/categories/categories'
+import { connect } from 'react-redux'
 
-const Blog = () => {
+const Blog = ({get_categories}) => {
   useEffect(() => {
     window.scrollTo(0,0)
+    get_categories()
   },[])
   return (
     <Layout>
@@ -34,4 +37,10 @@ const Blog = () => {
   )
 }
 
-export default Blog
+const mapStateToProps = (state) => ({
+  categories: state.categories
+})
+
+export default connect(mapStateToProps,{
+
+})( Blog)
