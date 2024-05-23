@@ -3,11 +3,17 @@ import Layout from '../../hocs/layouts/Layout'
 import React, { useEffect } from 'react'
 import { get_categories } from '../../redux/actions/categories/categories'
 import { connect } from 'react-redux'
+import { get_blog_list, get_blog_list_page } from '../../redux/actions/blog/blog'
+import CategoriesHeader from '../../components/blog/CategoriesHeader'
+import Category from './Category'
 
-const Blog = ({get_categories}) => {
+const Blog = ({get_categories, categories, get_blog_list, post, count, next, previous, get_blog_list_page}) => {
   useEffect(() => {
     window.scrollTo(0,0)
     get_categories()
+    get_blog_list()
+    console.log('categories', get_categories())
+    console.log('posts', get_blog_list())
   },[])
   return (
     <Layout>
@@ -17,7 +23,7 @@ const Blog = ({get_categories}) => {
         <meta name="keywords" content='agencia de software, agencia de marketing, creacion de pagina web' />
         <meta name="robots" content='all' />
         {/* url de tu pagina */}
-        <link rel="canonical" href="https://www.murkiva.com/" /> 
+        <link rel="canonical" href="https://www.murkiva.com/" />
         <meta name="author" content='Murkiva' />
         <meta name="publisher" content='Murkiva' />
 
@@ -32,15 +38,22 @@ const Blog = ({get_categories}) => {
         <meta name="twitter:image" content='https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg' />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-      <div>Blog</div>
+      {/* <CategoriesHeader categories={categories&&categories}/> */}
+      <Category/>
     </Layout>
   )
 }
 
 const mapStateToProps = (state) => ({
-  categories: state.categories
+  categories: state.categories.categories,
+  posts : state.blog.blog_list,
+  count : state.blog.count,
+  next : state.blog.next,
+  previous : state.blog.previous,
 })
 
 export default connect(mapStateToProps,{
-
-})( Blog)
+  get_categories,
+  get_blog_list,
+  get_blog_list_page
+})(Blog)
