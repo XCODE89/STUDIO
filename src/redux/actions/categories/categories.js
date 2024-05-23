@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { GET_CATEGORIES_SUCCESS, GET_CATEGORIES_FAIL } from './types';
 
+const apiUrl = import.meta.env.VITE_APP_API_URL;
+
 export const get_categories = () => async dispatch => {
     const config = {
         headers: {
@@ -9,8 +11,7 @@ export const get_categories = () => async dispatch => {
     };
 
     try{
-
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/category/list`, config)
+        const res = await axios.get(`${apiUrl}/api/category/list`, config)
 
         if(res.status === 200){
             dispatch({

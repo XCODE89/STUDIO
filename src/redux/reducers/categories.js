@@ -1,7 +1,4 @@
-import {
-    GET_CATEGORIES_SUCCESS,
-    GET_CATEGORIES_FAIL,
-} from '../actions/categories/types'
+import { GET_CATEGORIES_SUCCESS, GET_CATEGORIES_FAIL } from '../actions/categories/types'
 
 const initialState = {
     categories: null
