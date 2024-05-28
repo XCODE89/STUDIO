@@ -8,6 +8,7 @@ import UseCases from '../../components/home/UseCases'
 import Features from '../../components/home/Features'
 import CTA from '../../components/home/CTA'
 import Clients from '../../components/home/Clients'
+import BlogList from '../../components/home/BlogList'
 
 const Home = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
       <Features/>
       <CTA/>
       <Clients/>
+      <BlogList/>
     </Layout>
   )
 }
