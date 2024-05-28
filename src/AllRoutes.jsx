@@ -6,6 +6,9 @@ import About from './containers/pages/About'
 import Blog from './containers/pages/Blog'
 import Careers from './containers/pages/Careers'
 import Contact from './containers/pages/Contact'
+import Category from './containers/pages/Category'
+import Search from './containers/pages/Search'
+import PostDetail from './containers/pages/PostDetail'
 
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 
@@ -26,6 +29,9 @@ const AllRoutes = () => {
                 <Route path='/nosotros' element={<About/>}/>
                 <Route path='/blog' element={<Blog/>}/>
                 <Route path='/carreras' element={<Careers/>}/>
+                <Route path='/category/:slug' element={<Category/>}/>
+                <Route path='/search/:term' element={<Search/>}/>
+                <Route path='/blog/:slug' element={<PostDetail/>}/>
                 <Route path='/contacto' element={<Contact/>}/>
             </Routes>
         </AnimatePresence>

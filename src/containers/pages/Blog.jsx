@@ -5,16 +5,16 @@ import { get_categories } from '../../redux/actions/categories/categories'
 import { connect } from 'react-redux'
 import { get_blog_list, get_blog_list_page } from '../../redux/actions/blog/blog'
 import CategoriesHeader from '../../components/blog/CategoriesHeader'
-import Category from './Category'
+import BlogList from '../../components/blog/BlogList'
 
-const Blog = ({get_categories, categories, get_blog_list, post, count, next, previous, get_blog_list_page}) => {
+const Blog = ({get_categories, categories, get_blog_list, posts, count, next, previous, get_blog_list_page}) => {
+
   useEffect(() => {
     window.scrollTo(0,0)
     get_categories()
     get_blog_list()
-    console.log('categories', get_categories())
-    console.log('posts', get_blog_list())
   },[])
+  
   return (
     <Layout>
       <Helmet>
@@ -38,8 +38,17 @@ const Blog = ({get_categories, categories, get_blog_list, post, count, next, pre
         <meta name="twitter:image" content='https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg' />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-      {/* <CategoriesHeader categories={categories&&categories}/> */}
-      <Category/>
+      <div className="pt-12">
+          <CategoriesHeader categories={categories&&categories}/>
+
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
+              <div className="mx-auto max-w-6xl my-10">
+              {/* Content goes here */}
+                <BlogList posts={posts&&posts} get_blog_list_page={get_blog_list_page} count={count&&count}/>
+              </div>
+          </div>
+      </div>
     </Layout>
   )
 }
