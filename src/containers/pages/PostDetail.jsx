@@ -20,9 +20,9 @@ const PostDetail = ({get_blog, post}) => {
             {
             post && post.slug === slug ?
             <div className="pt-24">
-                <div className="relative bg-gray-200">
+                <div className="relative bg-gray-100">
                     <div className="absolute inset-0">
-                        <img className="h-full w-full object-cover" src={post.thumbnail} alt=""/>
+                        <img className="h-full w-full object-cover opacity-70" src={post.thumbnail} alt=""/>
                         <div className="absolute inset-0 bg-gray-200 mix-blend-multiply" aria-hidden="true" />
                     </div>
                     <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
@@ -31,18 +31,18 @@ const PostDetail = ({get_blog, post}) => {
                         </h1>
                         <div className="min-w-0 flex-1 p-4 pt-8">
                             <div className="">
-                                <span className=" hover:text-orange-500  mx-1 font-medium text-gray-800 text-sm ">
+                                <span className=" hover:text-orange-500  mx-1 font-bold text-gray-900 text-sm ">
                                     <Link to={`/category/${post.category.slug}`}>
                                         {post.category.name}
                                     </Link>
                                 </span>
                                 <span className="text-gray-300">&middot;</span> 
-                                <span className="mt-2 ml-2 mr-1 font-medium text-gray-800 text-sm">
+                                <span className="mt-2 ml-2 mr-1 font-bold text-gray-900 text-sm">
                                     {moment(post.published).format('LL')}
                                 </span>
                                 <span className="text-gray-300">&middot;</span>
-                                <span className="mt-2 mx-2 font-medium text-gray-800 text-sm">{post.time_read} min read</span> 
-                                <p className="mt-4 text-lg font-regular text-gray-800 leading-8">{post.description}</p>
+                                <span className="mt-2 mx-2 font-bold text-gray-900 text-sm">{post.time_read} min read</span> 
+                                <p className="mt-4 text-lg font-semibold text-gray-900 leading-8">{post.description}</p>
                             </div>
                         </div>
                     </div>
