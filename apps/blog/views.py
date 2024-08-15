@@ -6,7 +6,7 @@ from .models import Post, ViewCount
 from apps.category.models import Category
 from .serializers import PostSerializer, PostListSerializer
 from .pagination import SmallSetPagination, MediumSetPagination, LargeSetPagination
-from .permissions import IsPostAuthorOrReadOnly
+from .permissions import IsPostAuthorOrReadOnly, AuthorPermission
 from slugify import slugify
 
 from rest_framework.parsers import MultiPartParser, FormParser
@@ -235,10 +235,10 @@ class DeleteBlogPostView(APIView):
 
         return Response({'success': 'Post edited'})
 
-# class CreateBlogPostView(APIView):
-#     permission_classes = (AuthorPermission, )
-#     def post(self, request, format=None):
-#         user = self.request.user
-#         Post.objects.create(author=user)
+class CreateBlogPostView(APIView):
+    permission_classes = (AuthorPermission, )
+    def post(self, request, format=None):
+        user = self.request.user
+        Post.objects.create(author=user)
 
-#         return Response({'success': 'Post edited'})
+        return Response({'success': 'Post edited'})
