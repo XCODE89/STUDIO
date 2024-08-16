@@ -7,6 +7,9 @@ export default {
     extend: {
       colors:{
         "orange-button":'#ff561e'
+      },
+      maxWidth: {
+        '1700': '1700px',
       }
     },
     boxShadow: {

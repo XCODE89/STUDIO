@@ -9,6 +9,10 @@ import Contact from './containers/pages/Contact'
 import Category from './containers/pages/Category'
 import Search from './containers/pages/Search'
 import PostDetail from './containers/pages/PostDetail'
+import Optin from './containers/pages/Optin'
+import OptionCTA from './containers/pages/OptionCTA'
+import Ecommerce from './containers/pages/cases/Ecommerce'
+import JavascriptDev from './containers/pages/services/development/JavascriptDev'
 
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 
@@ -25,7 +29,9 @@ const AllRoutes = () => {
                 <Route path='*' element={<Error404/>}/>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/casos' element={<Cases/>}/>
+                <Route path='/casos/ecommerce' element={<Ecommerce/>}/>
                 <Route path='/servicios' element={<Services/>}/>
+                <Route path="/servicios/javascript" element={<JavascriptDev />} />
                 <Route path='/nosotros' element={<About/>}/>
                 <Route path='/blog' element={<Blog/>}/>
                 <Route path='/carreras' element={<Careers/>}/>
@@ -33,6 +39,8 @@ const AllRoutes = () => {
                 <Route path='/search/:term' element={<Search/>}/>
                 <Route path='/blog/:slug' element={<PostDetail/>}/>
                 <Route path='/contacto' element={<Contact/>}/>
+                <Route path="/ebook" element={<Optin/>} />
+                <Route path="/ebook/training" element={<OptionCTA/>} />
             </Routes>
         </AnimatePresence>
   )
