@@ -6,11 +6,11 @@ const CasesList = () => {
     const posts = [
         {
             id:'1234-qwer',
-          title: 'Boost your conversion rate',
-          href: '#',
-          category: { name: 'Article', href: '#' },
+          title: 'Tienda.com',
+          href: '/casos/ecommerce',
+          category: { name: 'Ecommerce'},
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
+            'Ecommerce website and application made with Django Rest Framework',
           date: 'Mar 16, 2020',
           datetime: '2020-03-16',
           imageUrl:

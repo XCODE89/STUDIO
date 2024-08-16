@@ -4,7 +4,7 @@ const CaseCard = ({data,index}) => {
 
     return(
         <Link 
-        to='/cases/id'
+        to={data.href} 
         onMouseEnter={()=>{
             const title_element = document.getElementById(index+100)
             title_element.classList.add('text-orange-500')
