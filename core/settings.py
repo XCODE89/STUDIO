@@ -50,6 +50,7 @@ PROJECTS_APPS = [
     "apps.blog",
     "apps.category",
     "apps.user",
+    "apps.contacts",
 ]
 
 THIRD_PARTY_APPS = [
@@ -236,6 +237,8 @@ CORS_ORIGIN_WHITELIST = env.list("CORS_ORIGIN_WHITELIST_DEV")
 CSRF_TRUSTED_ORIGINS = env.list("CSRF_TRUSTED_ORIGINS_DEV")
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+ACTIVE_CAMPAIGN_URL = os.environ.get('ACTIVE_CAMPAIGN_URL')
+ACTIVE_CAMPAIGN_API = os.environ.get('ACTIVE_CAMPAIGN_API')
 
 
 if not DEBUG:
