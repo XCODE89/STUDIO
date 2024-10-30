@@ -3,8 +3,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import {useState, Fragment, useEffect } from 'react'
 import {NavLink, Link} from 'react-router-dom'
-import loading_dots from '../../assets/images/logo.png'
-import logo_boomslag from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo.png'
 import DotLoader from 'react-spinners/DotLoader'
 
 const solutions = [
@@ -67,14 +66,14 @@ function Navbar(){
     const [open, setOpen] = useState(false)
 
     return(
-        <nav data-scroll data-scroll-id="hey" id='navbar' className='w-full py-6 top-0 transition duration-300 ease-in-out z-40 sticky'>
+        <nav data-scroll data-scroll-id="hey" id='navbar' className='w-full py-4 top-0 transition duration-300 ease-in-out z-40 sticky'>
             <div className="px-4 sm:px-6">
                 <div className="-ml-4 -mt-2 hidden lg:flex flex-wrap items-center justify-between sm:flex-nowrap md:px-14 px-2">
                     <Link to='/' className="ml-4 mt-2">
                     <img
-                        src={'https://bafybeiczl4dcxupma2zeyilkukfl4yge64axnhajd722wxgin62mtts6uy.ipfs.w3s.link/murkivamarketing.png'}
-                        width={160}
-                        height={160}
+                        src={logo}
+                        width={102}
+                        height={120}
                         className=""
                     />
                     </Link>
@@ -90,7 +89,7 @@ function Navbar(){
                         to="/contacto"
                         className="inline-flex bg-gray-800 ml-12 items-center rounded-md border border-transparent bg-orange-button px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-900 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
                     >
-                        Hire Us
+                        Contáctanos
                         <DotLoader className="ml-3 -mr-1 h-5 w-5" loading={loading} size={20} color="#f2f2f2" />
                     </Link>
                     </div>
@@ -98,7 +97,7 @@ function Navbar(){
                 <div className="-ml-4 -mt-2 lg:hidden flex flex-nowrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
                     <Link to='/' className="ml-4 mt-2">
                     <img
-                        src={'https://bafybeiczl4dcxupma2zeyilkukfl4yge64axnhajd722wxgin62mtts6uy.ipfs.w3s.link/murkivamarketing.png'}
+                        src={logo}
                         width={160}
                         height={160}
                         className=""

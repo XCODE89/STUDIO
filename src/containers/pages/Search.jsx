@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import { search_blog, search_blog_page } from "../../redux/actions/blog/blog";
 import { useParams } from "react-router-dom";
 import BlogList from "../../components/blog/search/BlogList";
+import SeoHelmet from "../../components/seo/SeoHelmet";
 
 const Search = ({
     posts,
@@ -26,29 +27,13 @@ const Search = ({
 
     return(
         <Layout>
-            <Helmet>
-            <title>Murkiva | Blog</title>
-            <meta name="description" content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones." />
-            <meta name="keywords" content='agencia de software, agencia de marketing, creacion de pagina web' />
-            <meta name="robots" content='all' />
-            <link rel="canonical" href="https://www.murkiva.com/" />
-            <meta name="author" content='Murkiva' />
-            <meta name="publisher" content='Murkiva' />
-
-            {/* Social Media Tags */}
-            <meta property="og:title" content='Murkiva | Software Agency' />
-            <meta property="og:description" content='Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones.' />
-            <meta property="og:url" content="https://www.murkiva.com/" />
-            <meta property="og:image" content='https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg' />
-
-            <meta name="twitter:title" content='Murkiva | Software Agency' />
-            <meta
-                name="twitter:description"
-                content='Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones.'
+            <SeoHelmet
+                title="Studio | Blog"
+                description="Agencia de software y marketing digital. Servicios de creacion de páginas web y desarrollo de aplicaciones."
+                keywords="agencia de software, agencia de marketing, creacion de pagina web"
+                image="https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg"
+                url="https://mapache.com"
             />
-            <meta name="twitter:image" content='https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg' />
-            <meta name="twitter:card" content="summary_large_image" />
-        </Helmet>
             <div className="pt-24">
                 <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
                 {/* We've used 3xl here, but feel free to try other max-widths based on your needs */}

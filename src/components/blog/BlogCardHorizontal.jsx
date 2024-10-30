@@ -31,7 +31,7 @@ const BlogCardHorizontal = ({ data, index }) => {
               <figure className="lg:flex-shrink-0">
                 <img id={index} className="h-64 lg:w-96 w-full object-cover rounded" src={data.thumbnail} alt="" />
               </figure>
-              <div className="min-w-0 flex-1 px-8 p-4 ">
+              <div className="min-w-0 flex-1 px-0 p-4 lg:px-8">
                 <p id={`title`+data.id} className=" lg:mt-0 lg:absolute lg:top-4 leading-10 text-3xl pb-4 font-semibold transition duration-300 ease-in-out">{data.title.length > 80 ? data.title.slice(0,79):data.title}</p>
                 <div className="lg:absolute lg:top-28">
 
