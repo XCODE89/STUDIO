@@ -57,7 +57,7 @@ const PostDetail = ({get_blog, post}) => {
                 </div>
             </div>
             :
-            <>Loading</>
+            <>No disponible por el momento</>
             }
         </Layout>
     )

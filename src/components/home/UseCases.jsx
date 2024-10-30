@@ -3,13 +3,13 @@ import React from 'react'
 const UseCases = () => {
     const posts = [
         {
-          title: 'Boost your conversion rate',
+          title: 'Optimización de Plataforma de Comercio Electrónico',
           href: '#',
-          category: { name: 'Article', href: '#' },
+          category: { name: 'Artículo', href: '#' },
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
-          date: 'Mar 16, 2020',
-          datetime: '2020-03-16',
+            'Rediseñamos y optimizamos una plataforma de e-commerce, mejorando la velocidad de carga en un 50% y aumentando las conversiones en un 35%.',
+          date: 'Mar 16, 2024',
+          datetime: '2024-03-16',
           imageUrl:
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
           readingTime: '6 min',
@@ -21,13 +21,13 @@ const UseCases = () => {
           },
         },
         {
-          title: 'How to use search engine optimization to drive sales',
+          title: 'Aplicación Financiera Segura para Startups',
           href: '#',
-          category: { name: 'Video', href: '#' },
+          category: { name: 'Artículo', href: '#' },
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.',
-          date: 'Mar 10, 2020',
-          datetime: '2020-03-10',
+            'Desarrollamos una aplicación financiera para una startup, integrando medidas de seguridad avanzadas y logrando procesar transacciones en tiempo real.',
+          date: 'Mar 10, 2024',
+          datetime: '2024-03-10',
           imageUrl:
             'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
           readingTime: '4 min',
@@ -39,13 +39,13 @@ const UseCases = () => {
           },
         },
         {
-          title: 'Improve your customer experience',
+          title: 'Automatización de Procesos para una Empresa de Logística',
           href: '#',
-          category: { name: 'Case Study', href: '#' },
+          category: { name: 'Artículo', href: '#' },
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.',
-          date: 'Feb 12, 2020',
-          datetime: '2020-02-12',
+            'Implementamos un sistema de automatización que optimizó un 80% de los procesos de inventario, aumentando la eficiencia y reduciendo los costos operativos.',
+          date: 'Feb 12, 2024',
+          datetime: '2024-02-12',
           imageUrl:
             'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
           readingTime: '11 min',
@@ -65,7 +65,7 @@ const UseCases = () => {
           </div>
           <div className="relative mx-auto lg:mx-12 max-w-full">
             <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Some of our cases</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Algunos de nuestros casos</h2>
               
             </div>
             <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">

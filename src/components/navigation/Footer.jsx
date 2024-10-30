@@ -1,11 +1,11 @@
 import {connect} from 'react-redux'
-import logo_boomslag from '../../assets/logo.png'
+import logo from '../../assets/images/logo.png'
 const navigation = {
     solutions: [
       { name: 'Marketing', href: '#' },
-      { name: 'Analytics', href: '#' },
-      { name: 'Commerce', href: '#' },
-      { name: 'Insights', href: '#' },
+      { name: 'Analíticas', href: '#' },
+      { name: 'Comercio', href: '#' },
+      { name: 'Perspectivas', href: '#' },
     ],
     support: [
         { name: 'Contacto', href: '/contacto' },
@@ -18,9 +18,9 @@ const navigation = {
         { name: 'Blog', href: '/blog' },
     ],
     legal: [
-      { name: 'Claim', href: '#' },
-      { name: 'Privacy', href: '#' },
-      { name: 'Terms', href: '#' },
+      { name: 'Reclamos', href: '#' },
+      { name: 'Privacidad', href: '#' },
+      { name: 'Terminos', href: '#' },
     ],
     social: [
       {
@@ -97,7 +97,7 @@ function Footer(){
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
             <img
-                src={'https://bafybeie3dkjdydulam4igwx2hwaepkkyugze2z7bpohekdi2maqrgaaegq.ipfs.w3s.link/idealogo.png'}
+                src={logo}
                 width={60}
                 height={60}
                 className=""/>
@@ -113,7 +113,7 @@ function Footer(){
             <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-base font-medium text-gray-900">Visit Us</h3>
+                  <h3 className="text-base font-medium text-gray-900">Visítanos</h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {navigation.solutions.map((item) => (
                       <li key={item.name}>
@@ -166,7 +166,7 @@ function Footer(){
             </div>
           </div>
           <div className="mt-12 border-t border-gray-200 pt-8">
-            <p className="text-base text-gray-400 text-center">&copy; 2020 Murkiva by Boomslag, Inc. All rights reserved.</p>
+            <p className="text-base text-gray-400 text-center">&copy; 2024 Mapache. All rights reserved.</p>
           </div>
         </div>
       </footer>

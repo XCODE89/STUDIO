@@ -43,8 +43,8 @@ const applications = [
 const PositionsList = () => {
     return(
         <div className="max-w-full mx-4 lg:mx-12 bg-white">
-            <h2 className="text-5xl font-semibold text-gray-900 pb-8">Open Positions</h2>
-            <p className="text-2xl font-regular text-gray-900 max-w-5xl leading-10">Let's write some beautiful code and make smart designs. This is what we're crazy about, and we're looking for the ones who feel the same.</p>
+            <h2 className="text-5xl font-semibold text-gray-900 pb-8">Posiciones Abiertas</h2>
+            <p className="text-2xl font-regular text-gray-900 max-w-5xl leading-10">Escribamos un código hermoso y hagamos diseños inteligentes. Esto es lo que nos apasiona, y estamos buscando a quienes sientan lo mismo.</p>
         
             <div className='grid grid-cols-12 pt-8'>
             
@@ -58,9 +58,10 @@ const PositionsList = () => {
                     className="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                     defaultValue="Canada"
                 >
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
+                    <option>Chile</option>
+                    <option>Perú</option>
+                    <option>Argentina</option>
+                    <option>Colombia</option>
                 </select>
             </div>
 
